@@ -7,5 +7,9 @@
       <class name="testScripts.HamburgerFuncValidation"/>
     </classes>
  </test>
- 
+ <test thread-count="5" name="US17_P1_05_ChromeTest"> 
+ <parameter name="browser" value="chrome"/> 
+ <classes> <class name="testScripts.HamburgerFuncValidation"/> 
+ </classes> 
+ </test>
 </suite>
