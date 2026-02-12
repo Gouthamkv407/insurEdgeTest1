@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-12T14:57:59 IST" name="Surefire suite" finished-at="2026-02-12T14:58:13 IST" duration-ms="14188">
+    <groups>
+    </groups>
+    <test started-at="2026-02-12T14:57:59 IST" name="Surefire test" finished-at="2026-02-12T14:58:13 IST" duration-ms="14188">
+      <class name="testScripts.NewTest">
+        <test-method is-config="true" signature="browserSetup()[pri:0, instance:testScripts.NewTest@534df152]" started-at="2026-02-12T14:57:59 IST" name="browserSetup" finished-at="2026-02-12T14:57:59 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method is-config="true" signature="browserType(java.lang.String)[pri:0, instance:testScripts.NewTest@534df152]" started-at="2026-02-12T14:57:59 IST" name="browserType" finished-at="2026-02-12T14:58:08 IST" duration-ms="9572" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserType -->
+        <test-method signature="customerAuthorizetitleValidation()[pri:0, instance:testScripts.NewTest@534df152]" started-at="2026-02-12T14:58:08 IST" name="customerAuthorizetitleValidation" finished-at="2026-02-12T14:58:13 IST" duration-ms="4553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerAuthorizetitleValidation -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testScripts.NewTest@534df152]" started-at="2026-02-12T14:58:13 IST" name="afterClass" finished-at="2026-02-12T14:58:13 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testScripts.NewTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

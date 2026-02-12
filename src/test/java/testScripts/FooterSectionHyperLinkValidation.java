@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -23,8 +24,8 @@ public class FooterSectionHyperLinkValidation {
 		config=new BrowserConfig();
 	}
 	@BeforeMethod
-	@Parameters("browser")
-	public void setUpBrowserType(String browser)
+	@Parameters({"browser"})
+	public void setUpBrowserType(@Optional("chrome") String browser)
 	{
 		config.setBrowser(browser);
 		driver=config.getBrowser();

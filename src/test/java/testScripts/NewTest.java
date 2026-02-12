@@ -10,6 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -46,7 +47,7 @@ public class NewTest {
   }
   @BeforeMethod
   @Parameters("browser")
-  public void browserType(String browser) {
+  public void browserType(@Optional("chrome") String browser) {
 	  config.setBrowser(browser);
 	  driver=config.getBrowser();
 	  config.navigateToWebsite("https://qeaskillhub.cognizant.com/LoginPage");

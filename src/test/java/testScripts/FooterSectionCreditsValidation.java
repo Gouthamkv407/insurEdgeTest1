@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -26,8 +27,8 @@ public class FooterSectionCreditsValidation {
 		getBrowser = new BrowserConfig();
 	}
 	@BeforeMethod
-	@Parameters("browser")
-	public void performLogin(String browser)
+	@Parameters({"browser"})
+	public void performLogin(@Optional("chrome") String browser)
 	{
 		getBrowser.setBrowser(browser);
         driver = getBrowser.getBrowser();

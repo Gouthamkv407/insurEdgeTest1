@@ -1,10 +1,15 @@
 package testScripts;
 
-import org.testng.annotations.*;
 import org.openqa.selenium.ElementNotInteractableException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.AssertJUnit;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import insurEdgeHomepage.HomePage;
 import projectConfig.BrowserConfig;
@@ -21,8 +26,8 @@ public class HamburgerFuncValidation {
     }
 
     @BeforeMethod
-    @Parameters("browser")
-    public void beforeMethod(String browser) {
+    @Parameters({"browser"})
+    public void beforeMethod(@Optional("chrome") String browser) {
         getBrowser.setBrowser(browser);
         driver = getBrowser.getBrowser();
         getBrowser.navigateToWebsite("https://qeaskillhub.cognizant.com/LoginPage");
