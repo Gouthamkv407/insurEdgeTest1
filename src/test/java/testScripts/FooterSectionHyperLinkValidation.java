@@ -24,7 +24,7 @@ public class FooterSectionHyperLinkValidation {
 		config=new BrowserConfig();
 	}
 	@BeforeMethod
-	@Parameters({"browser"})
+	@Parameters("browser")
 	public void setUpBrowserType(@Optional("chrome") String browser)
 	{
 		config.setBrowser(browser);
@@ -39,7 +39,8 @@ public class FooterSectionHyperLinkValidation {
 	public void performValidationOfHyperLink()
 	{
 		String msg=page1.performActionsOnFooterSectionHyperLink();
-		Assert.assertEquals(msg, "Hyperlink present", "HyperLink redirects to correct credits page");
+		System.out.println(msg);
+		Assert.assertEquals(msg, "Hyperlink present");
 	}
 	@AfterClass
 	public void closeBrowser()

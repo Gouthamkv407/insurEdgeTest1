@@ -52,7 +52,7 @@ public class HomePage {
 		Set<String> winHandles=driver.getWindowHandles();
 		for(String s:winHandles)
 		{
-			if(driver.switchTo().window(s).getTitle().equals("Download 155+ Free Bootstrap Templates & Themes | BootstrapMade"))
+			if(driver.switchTo().window(s).getTitle().equals("Download 160+ Free Bootstrap Templates & Themes | BootstrapMade"))
 			{
 				return "Hyperlink present";
 			}
